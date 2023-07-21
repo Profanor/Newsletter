@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
 body {
     background-color: hsl(235, 18%, 26%);
     display: flex;
@@ -23,8 +28,10 @@ body {
 .heading {
     display: grid;
     padding: 20px;
+    margin: -10px;
 }
 .heading h1 {
+    font-weight: 700;
     margin-top: 20px;
     color: hsl(234, 29%, 20%);
 }
@@ -44,27 +51,51 @@ body {
     opacity: 0.5;
     width: 100%;
 }
+.mailbox small {
+    color: var(--error-color);
+}
+.mailbox.error input {
+    color: #dc3545;
+    background-color: #ffc8ce;
+    border-color: var(--error-color);
+}
+.mailbox.success input {
+    border-color: var(--success-color);
+}
 .mailbox input:focus {
     outline: none;
 }
 .mailbox input:hover {
     cursor: pointer;
+    border: solid 1px black;
 }
 .list {
     display: grid;
-    margin: 0px auto;
     padding: 20px;
+}
+.list1 {
+    color: hsl(235, 18%, 26%);
+    display: flex;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -7px;
+    width: 100%;
+}
+.text {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
 }
 .mailbox {
     display: grid;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 5px;
 }
 .orange-box {
     float: right;
     padding: 1em;
     width: 240px;
-    height: 400px;
+    height: 394px;
 }
 .p {
     color: hsl(234, 29%, 20%);

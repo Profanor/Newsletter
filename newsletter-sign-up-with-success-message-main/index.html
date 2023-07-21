@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 <body>
@@ -20,23 +21,26 @@
         <p class="p">Join 60,000+ product managers receiving monthly<br> updates on:</p>
       </div>
         <div class="list">
-        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
-        <br>
-        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
-        <br>
-        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
-      </div>
+          <div class="list1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg><span class="text">&nbsp Product discovery and building what matters</span>
+        </div><br>
+        <div class="list1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg><span class="text">&nbsp Measuring to ensure updates are a success</span>
+        </div><br>
+        <div class="list1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg><span class="text">&nbsp And much more!</span>
+        </div></div>
       <div class="mailbox">
-        <label for="email" class="label">Email address</label>
-        <input type="email" value="email@company.com" class="input" required>  
-        <button type="submit" value="Subscribe to monthly newsletter" class="btn">Subscribe to monthly newsletter</button>
+        <label for="email" class="label">Email address</label><small></small>
+        <input type="email" placeholder="email@company.com" class="input" id="email" required autocomplete="off"> 
+        <button type="submit" onclick="validateForm()" value="Subscribe to monthly newsletter" class="btn">Subscribe to monthly newsletter</button>
       </div>  
       </form>
   </div>
  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Profanor</a>.
   </div>
 </body>
 </html>
