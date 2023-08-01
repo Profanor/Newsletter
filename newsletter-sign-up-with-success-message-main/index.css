@@ -42,25 +42,35 @@ body {
     margin-bottom: 6px;
 }
 .mailbox input {
-    border: solid 2px #f0f0f0;
+    border: solid 1px #f0f0f0;
     border-radius: 6px;
     padding: 10px;
     margin-bottom: 15px;
     font-size: 14px;
     display: block;
-    opacity: 0.5;
+    opacity: 0.8;
     width: 100%;
 }
 .mailbox small {
     color: var(--error-color);
+    font-size: 11px;
+    float: right;
 }
 .mailbox.error input {
     color: #dc3545;
     background-color: #ffc8ce;
+    border: solid 1.5px var(--error-color);
     border-color: var(--error-color);
 }
+.mailbox.error input:hover {
+    border: solid 1px #dc3545;
+}
 .mailbox.success input {
+    border: solid 1.5px var(--success-color);
     border-color: var(--success-color);
+}
+.mailbox.success input:hover {
+    border: solid 1px var(--success-color);
 }
 .mailbox input:focus {
     outline: none;

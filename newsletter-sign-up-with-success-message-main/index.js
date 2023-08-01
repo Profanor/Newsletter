@@ -11,7 +11,7 @@ const checkEmail = () => {
     if (!isRequired(email)) {
         showError(eMail, 'email cannot be blank.');
     }   else if (!isEmailValid(email)) {
-        showError(eMail, 'valid email required');
+        showError(eMail, 'Valid email required');
     }   else {
         showSuccess(eMail);
         valid = true;
